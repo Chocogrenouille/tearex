@@ -1,6 +1,8 @@
 class Game {
     constructor () {
-        this.backgroundImages;
+        this.mountainImages;
+        this.cloudImages;
+        this.TreeImage
         this.player;
         this.tea;
         this.sun;
@@ -11,23 +13,29 @@ class Game {
     }
 
     setup () {
-        this.background = new Background();
+        this.mountain = new Mountain();
+        this.tree = new Tree();
+        this.clouds = new Clouds();
     }
 
     preload () {
-        this.backgroundImages = [
+        this.mountainImages = [
             {src: loadImage('../img/background/1.png')},
             {src: loadImage('../img/background/2.png')},
             {src: loadImage('../img/background/3.png')},
-            {src: loadImage('../img/background/4.png')},
-            {src: loadImage('../img/background/5.png')},
-            {src: loadImage('../img/background/6.png')}
         ]
+        this.cloudImages = [
+            {src: loadImage('../img/background/4.png'), x: 0},
+            {src: loadImage('../img/background/5.png'), x: 0}
+        ]
+        this.treeImage = loadImage('../img/background/6.png');
     }
 
     draw () {
         clear();
-        this.background.draw();
+        this.mountain.draw();
+        this.clouds.draw();
+        this.tree.draw();
     }
 
    
