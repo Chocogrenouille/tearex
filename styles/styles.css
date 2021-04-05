@@ -1,0 +1,68 @@
+
+
+html {
+    background-image: url('../img/background_landing.jpg');
+    background-size: cover;
+    font-size: 16px;
+}
+
+h1{
+    color: #c76259;
+    font-family: 'Fredericka the Great', cursive;
+    padding-bottom: 5vh;
+    font-size: 3rem;
+}
+
+.header-explanation {
+    color: #c76259;
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 2rem;
+    padding: 0;
+}
+
+.intro{
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    width: 90vh;
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 10vh; 
+    line-height: 2rem; 
+    margin: 10vh auto;
+    border: 3px solid white;
+    border-radius: 5px;
+    font-weight:bold;
+    font-size: 1rem;
+}
+
+button{ 
+    margin-top: 8vh;
+    padding: 2vh 5vh;
+    background-color: #465030;
+    border-radius: 5px;
+    border: 1px solid #FFA69E;   
+}
+
+button > a {
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    color: #FFA69E;
+    font-size: 1rem;
+}
+
+#canvas{
+    border: 1px solid #FFA69E;
+}
+
+.explanation{
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    width: 100vh;
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 1vh; 
+    line-height: 2rem; 
+    margin: 1vh auto;
+    border: 3px solid white;
+    border-radius: 5px;
+    font-weight:bold;
+    font-size: 1rem;
+}
