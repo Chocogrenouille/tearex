@@ -2,16 +2,16 @@ const game = new Game;
 
 
 function setup() {
-    createCanvas(1200, 600);
-    background('white')
+    createCanvas(900, 600);
+    game.setup();
 }
 
 
 function draw () {
-
+    game.draw();
 }
 
 
 function preload () {
-
+    game.preload();
 }

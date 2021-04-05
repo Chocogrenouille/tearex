@@ -1,6 +1,6 @@
 class Game {
     constructor () {
-        this.background;
+        this.backgroundImages;
         this.player;
         this.tea;
         this.sun;
@@ -11,16 +11,26 @@ class Game {
     }
 
     setup () {
-
-    }
-
-    draw () {
-
+        this.background = new Background();
     }
 
     preload () {
-        this.background = loadImage('../img/background/hill.png');
+        this.backgroundImages = [
+            {src: loadImage('../img/background/1.png')},
+            {src: loadImage('../img/background/2.png')},
+            {src: loadImage('../img/background/3.png')},
+            {src: loadImage('../img/background/4.png')},
+            {src: loadImage('../img/background/5.png')},
+            {src: loadImage('../img/background/6.png')}
+        ]
     }
+
+    draw () {
+        clear();
+        this.background.draw();
+    }
+
+   
 }
 
 
