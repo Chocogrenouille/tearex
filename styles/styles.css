@@ -66,3 +66,9 @@ button > a {
     font-weight:bold;
     font-size: 1rem;
 }
+
+.p5Canvas{
+    margin-left: 35vh;
+    border: 5px solid white; 
+    border-radius: 5px;
+}
