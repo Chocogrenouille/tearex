@@ -1,5 +1,4 @@
 
-
 html {
     background-image: url('../img/background_landing.jpg');
     background-size: cover;
@@ -47,28 +46,4 @@ button > a {
     text-decoration: none;
     color: #FFA69E;
     font-size: 1rem;
-}
-
-#canvas{
-    border: 1px solid #FFA69E;
-}
-
-.explanation{
-    text-align: center;
-    font-family: 'Raleway', sans-serif;
-    width: 100vh;
-    background-color: rgba(255, 255, 255, 0.8); 
-    padding: 1vh; 
-    line-height: 2rem; 
-    margin: 1vh auto;
-    border: 3px solid white;
-    border-radius: 5px;
-    font-weight:bold;
-    font-size: 1rem;
-}
-
-.p5Canvas{
-    margin-left: 35vh;
-    border: 5px solid white; 
-    border-radius: 5px;
 }

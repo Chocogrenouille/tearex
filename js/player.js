@@ -3,11 +3,17 @@ class Player {
         // should add lives?
         this.x = 5;
         this.y = height-70;
+        this.width = 130;
+        this.height = 70;
+
+        this.score = 0;
+        this.sumOfCollectedTeaLeaves = 0;
+        this.sumOfCollectedSuns = 0;
     }
 
     draw () {
         // this is loading the image, the position of x & y and size of image
-        image(game.playerImage, this.x, this.y, 130, 70);
+        image(game.playerImage, this.x, this.y, this.width, this.height);
 
         //this one adds 5 units to y-position of player, meaning it will constantly go down
         this.y += 5;
@@ -34,16 +40,15 @@ class Player {
         }
     }
 
-    moveRight (){
+    moveRight() {
         this.x += 10;
     }
-
-    moveLeft () {
+    moveLeft() {
         this.x -= 10;
     }
-
-    jump () {
+    jump() {
         this.y -= 200;
     }
+
 }
         

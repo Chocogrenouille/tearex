@@ -14,7 +14,7 @@ class Game {
         this.clouds = new Clouds();
         this.player = new Player();
 
-        // creating empty array for items to collect
+        // Creating empty array for items to collect
         this.collectedLeaves = [];
         this.collectedSuns = [];
     }
@@ -42,7 +42,7 @@ class Game {
         this.tree.draw();
         this.player.draw()
 
-        // this one creates new tea leaves
+        // This one creates new tea leaves
         if (frameCount % 150 === 0) {
             this.collectedLeaves.push(new Tea(this.teaImage))
         }
@@ -50,7 +50,7 @@ class Game {
             leaf.draw();
         })
 
-        //this one creates new suns
+        // This one creates new suns
         if (frameCount % 200 === 0) {
             this.collectedSuns.push(new Sun(this.sunImage))
         }
@@ -58,9 +58,33 @@ class Game {
             sun.draw();
         })
 
+        // Uses collection function to "pop" items, when collection function is return true
+       this.collectedLeaves = this.collectedLeaves.filter (leaf => {
+            if (leaf.collection(this.player) || leaf.x < 0) {
+                return false
+            } else {
+                return true
+            }
+       })
+
+       this.collectedSuns = this.collectedSuns.filter (sun => {
+            if (sun.collection(this.player) || sun.x < 0) {
+                return false
+            } else {
+                return true
+            } 
+        })
+
+      
     }
 
-   
+     calculateScore () {
+        if(this.player.sumOfCollectedTeaLeaves === this.player.sumOfCollectedSuns) {
+            this.player.score += 10;
+            document.querySelector('body > div > p.score').innerText = this.player.score;
+            console.log(document.querySelector('body > div > p.score').innerText);
+        }
+    }
 }
 
 
