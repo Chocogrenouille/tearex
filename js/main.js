@@ -3,7 +3,6 @@ const game = new Game;
 
 function setup() {
     createCanvas(900, 600);
-    frameRate(20)
     game.setup();
 }
 
@@ -15,4 +14,16 @@ function draw () {
 
 function preload () {
     game.preload();
+}
+
+function keyPressed () {
+    if (keyCode === 39){
+        game.player.moveRight();
+    }
+    if (keyCode === 37) {
+        game.player.moveLeft();
+    }
+    if (keyCode === 32) {
+        game.player.jump();
+    }
 }
