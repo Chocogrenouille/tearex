@@ -25,8 +25,11 @@ class Tea {
         if (dist(teaX, teaY, playerX, playerY) > 50){
             return false
         } else {
-            game.player.sumOfCollectedTeaLeaves++;
-            game.calculateScore();
+            game.player.sumOfCollectedTeaLeaves.push('leaf');
+            game.scoreLevelOne('leaf');
+            game.scoreLevelTwo();
+            game.scoreLevelThree();
+            game.levellingUp();
             return true
         }
     }

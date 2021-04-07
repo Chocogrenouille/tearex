@@ -1,14 +1,18 @@
 class Player {
     constructor (){
-        // should add lives?
         this.x = 5;
         this.y = height-70;
         this.width = 130;
         this.height = 70;
+        this.lives = 3; 
 
         this.score = 0;
-        this.sumOfCollectedTeaLeaves = 0;
-        this.sumOfCollectedSuns = 0;
+        this.level = 2.5;
+        this.sumOfCollectedTeaLeaves = [];
+        this.sumOfCollectedSuns = [];
+        this.sumOfCollectedPans = [];
+        this.sumOfCollectedBags = [];
+        this.sumOfCollectedTimes = [];
     }
 
     draw () {
