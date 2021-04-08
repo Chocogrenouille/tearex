@@ -5,18 +5,9 @@ class Player {
         this.x = 0;
         this.y = height-92;
         
-        // this.velocity = 0; 
-        // this.gravity = 0.2;
-       
-        this.lives = 3; 
-        this.score = 0;
+        this.reset();
         this.level = 0;
-        this.sumOfCollectedTeaLeaves = [];
-        this.sumOfCollectedSuns = [];
-        this.sumOfCollectedPans = [];
-        this.sumOfCollectedBags = [];
-        this.sumOfCollectedTimes = [];
-        this.sumOfCollectedBugs = [];
+        this.lives = 3; 
     }
 
     draw () {
@@ -58,6 +49,16 @@ class Player {
     jump() {
         this.y -= 200;
         image(game.playerImageJump, this.x, this.y, this.width, this.height);
+    }
+
+    reset(){
+        this.score = 0;
+        this.sumOfCollectedTeaLeaves = [];
+        this.sumOfCollectedSuns = [];
+        this.sumOfCollectedPans = [];
+        this.sumOfCollectedBags = [];
+        this.sumOfCollectedTimes = [];
+        this.sumOfCollectedBugs = [];
     }
 
 }

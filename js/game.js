@@ -78,7 +78,7 @@ class Game {
             textSize(30)
             textFont(this.headingFont);
             text('Press ENTER to continue.', 170, 550, width/1.6);
-            this.player.score = 0;
+            this.player.reset();
             document.querySelector('body > div > span.score').innerText = this.player.score;
             document.querySelector('body > div > span.levels').innerText = 2;
             
@@ -100,9 +100,8 @@ class Game {
             textSize(30)
             textFont(this.headingFont);
             text('Press ENTER to continue.', 170, 580, width/1.6);
-            this.player.score = 0;
-            this.player.lives = 3;
-            document.querySelector('body > div > span.score').innerText = 0;
+            this.player.reset();
+            document.querySelector('body > div > span.score').innerText = this.player.score;
             document.querySelector('body > div > span.levels').innerText = 3;
         }
         if(this.player.level === 3){
@@ -121,10 +120,9 @@ class Game {
             textSize(30)
             textFont(this.headingFont);
             text('Press ENTER to continue.', 170, 560, width/1.6);
-            this.player.score = 0;
-            this.player.lives = 3;
-            document.querySelector('body > div > span.score').innerText = 0;
-            document.querySelector('body > div > span.levels').innerText = 3;
+            this.player.reset();
+            document.querySelector('body > div > span.score').innerText = this.player.score;
+            document.querySelector('body > div > span.levels').innerText = 4;
         }
         if(this.player.level === 4){
             this.levelFour();
@@ -144,10 +142,9 @@ class Game {
             textSize(20)
             textFont(this.headingFont);
             text('Press ENTER to play again.', 170, 570, width/1.6);
-            this.player.score = 0;
-            this.player.lives = 3;
-            document.querySelector('body > div > span.score').innerText = 0;
-            document.querySelector('body > div > span.levels').innerText = 4;
+            this.player.reset();
+            document.querySelector('body > div > span.score').innerText = this.player.score;
+            document.querySelector('body > div > span.levels').innerText = this.player.level;
         }
 
         if(this.player.lives === 0){
@@ -159,7 +156,8 @@ class Game {
             fill('#c76259')
             textSize(25)
             text('Press ENTER to start again.', 170, 500, width/1.6);
-            document.querySelector('body > div > span.score').innerText = 0;
+            this.player.reset();
+            document.querySelector('body > div > span.score').innerText = this.player.score;
         }
     }
 
