@@ -10,13 +10,14 @@ body{
     padding: 1.5em;
 }
 
-h2{
-    font-family: 'Raleway', sans-serif; 
-    font-size: 1.5rem;
+p{
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 3rem;
 }
 
 .scoreboard {
     font-family: 'Raleway', sans-serif;
+    font-size: 1.5rem;
     color: white;
     width: 10em; 
     background-color: #c76259;

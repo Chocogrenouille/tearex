@@ -1,14 +1,14 @@
 class Tea {
     constructor (){
         this.x = width;
-        this.y = (Math.random() * height) / 1.01;
+        this.y = (Math.random() * height) / 1.2;
         this.width = 40;
         this.height = 40;
     }
 
     draw (){
         image(game.teaImage, this.x, this.y, this.width, this.height);
-        this.x -= 4;
+        this.x -= 4.5;
     }
 
     collection (playerSize) {
@@ -27,8 +27,9 @@ class Tea {
         } else {
             game.player.sumOfCollectedTeaLeaves.push('leaf');
             game.scoreLevelOne('leaf');
-            game.scoreLevelTwo();
-            game.scoreLevelThree();
+            game.scoreLevelTwo('leaf');
+            game.scoreLevelThree('leaf');
+            game.scoreLevelFour('leaf');
             game.levellingUp();
             return true
         }

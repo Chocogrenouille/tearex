@@ -30,7 +30,12 @@ function keyPressed () {
         game.player.level = 2;
     } else if (keyCode === 13 && game.player.level === 2.5) {
         game.player.level = 3;
+    } else if (keyCode === 13 && game.player.level === 3.5) {
+        game.player.level = 4;
+    } else if (keyCode === 13 && game.player.level === 4.5) {
+        game.player.level = 1;
     } else if (keyCode === 13 && game.player.lives === 0){
+        game.player.lives = 3;
         game.player.level = 1;
     }
 }
