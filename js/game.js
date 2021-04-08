@@ -33,28 +33,28 @@ class Game {
 
     preload () {
         this.mountainImages = [
-            {src: loadImage('/img/background/1.png')},
-            {src: loadImage('/img/background/2.png')},
-            {src: loadImage('/img/background/3.png')},
+            {src: loadImage('img/background/1.png')},
+            {src: loadImage('img/background/2.png')},
+            {src: loadImage('img/background/3.png')},
         ]
         this.cloudImages = [
-            {src: loadImage('/img/background/4.png'), x: 0},
-            {src: loadImage('/img/background/5.png'), x: 0}
+            {src: loadImage('img/background/4.png'), x: 0},
+            {src: loadImage('img/background/5.png'), x: 0}
         ]
-        this.treeImage = loadImage('/img/background/6.png');
-        this.playerImage = loadImage('/img/player.png');
-        this.playerImageLeft = loadImage('/img/player-left.png');
-        this.playerImageJump = loadImage('/img/player-jump.png');
-        this.teaImage = loadImage('/img/tealeaves.png');
-        this.sunImage = loadImage('/img/sun.png');
-        this.panImage = loadImage('/img/fire.png');
-        this.bagImage = loadImage('/img/bag.png');
-        this.timeImage = loadImage('/img/time.png');
-        this.bugImage = loadImage('/img/caterpillar.png');
-        this.tearexImage = loadImage('/img/winning.jpeg');
+        this.treeImage = loadImage('img/background/6.png');
+        this.playerImage = loadImage('img/player.png');
+        this.playerImageLeft = loadImage('img/player-left.png');
+        this.playerImageJump = loadImage('img/player-jump.png');
+        this.teaImage = loadImage('img/tealeaves.png');
+        this.sunImage = loadImage('img/sun.png');
+        this.panImage = loadImage('img/fire.png');
+        this.bagImage = loadImage('img/bag.png');
+        this.timeImage = loadImage('img/time.png');
+        this.bugImage = loadImage('img/caterpillar.png');
+        this.tearexImage = loadImage('img/winning.jpeg');
 
-        this.headingFont = loadFont('/fonts/FrederickatheGreat-Regular.ttf');
-        this.regularFont = loadFont('/fonts/Raleway-Light.ttf');
+        this.headingFont = loadFont('fonts/FrederickatheGreat-Regular.ttf');
+        this.regularFont = loadFont('fonts/Raleway-Light.ttf');
     }
 
     draw (){
