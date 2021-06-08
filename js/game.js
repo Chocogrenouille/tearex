@@ -62,7 +62,6 @@ class Game {
             this.landingPage();
         }
         if(this.player.level === 1){
-            console.log('yay')
             this.levelOne();
         }
         if(this.player.level === 1.5){
@@ -81,7 +80,6 @@ class Game {
             this.player.reset();
             document.querySelector('body > div > span.score').innerText = this.player.score;
             document.querySelector('body > div > span.levels').innerText = 2;
-            
         }
         if (this.player.level === 2) {
             this.levelTwo();
